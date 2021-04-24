@@ -1,0 +1,76 @@
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+}
+.box {
+    width: 250px;
+    margin: auto;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    background-color: whitesmoke;
+}
+.box:hover {
+    transform: translateY(-0.5em);
+    transition: 0.3s ease;
+}
+form {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    width: 500px;
+    padding: 40px 0;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+label {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+input, textarea{
+    display: block;
+    margin: auto;
+    background: none;
+    color: black;
+    border: 1px solid teal;
+    padding: 5px 6px;
+    width: 200px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+input {
+    text-align: center;
+}
+textarea{
+    width: 400px;
+}
+input[type='text']:focus {
+    width: 350px;
+    transition: 0.7s ease;
+}
+input[type='submit'] {
+    margin-top: 30px;
+    padding: 10px;
+}
+input[type='submit']:hover {
+    background-color: teal;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.errors {
+    color: red;
+    text-align: center;
+}
+.success {
+    color: green;
+    text-align: center;
+}
